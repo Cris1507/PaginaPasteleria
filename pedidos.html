@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="estilos.css" type="text/css" />
+    <!--Links de las fuentes de texto usadas-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="historia.html"> Historia</a></li>
+      <li><a href="pedidos.html">Pedidos</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li style="float:right"><a href="sucursales.html">Sucursales y Contacto</a></li>
+    </ul>
+    <h1 class="pedidos">Pedidos</h1>
+    <form>
+      <label for="Nombre" id="lblNombre">Nombre:</label>
+      <input type="text" id="txtNombre" placeholder="Introduzca su nombre" />
+      <label for="Télefono" id="lblTel">Numero de Teléfono:</label>
+      <input
+        type="number"
+        id="txtTel"
+        placeholder="Introduzca su número de teléfono"
+      />
+      <label for="Correo" id="lblCorreo">Correo Electrónico:</label>
+      <input
+        type="email"
+        id="txtCorreo"
+        placeholder="Introduzca su correo electrónico"
+      />
+      <label for="Producto" id="lblProd">
+        Elija el producto que desee comprar
+      </label>
+      <select id="selProd">
+        <option value="pastel1">Pastel de cumpleaños</option>
+        <option value="pastel2">Pastel de boda</option>
+        <option value="pastel3">Pastel personalizado</option>
+        <option value="pastel4">Pastel escalonado</option>
+        <option value="pastel5">Pastel tematizado</option>
+      </select>
+      <br />
+      <input type="submit" id="btnEnviar" />
+    </form>
+  </body>
+</html>
